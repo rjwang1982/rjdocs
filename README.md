@@ -34,6 +34,13 @@
 ### 云原生
 - [云原生指南](Cloud_Native_Guide.md)
 
+### 存储与文件系统
+- [rclone 技术指南](rclone-technical-guide.md) - rclone 功能介绍、工作原理和最佳实践
+- [rclone vs Mountpoint 对比分析](rclone-vs-mountpoint-comparison.md) - rclone 与 AWS Mountpoint 全面对比，包含性能、功能、使用场景等
+- [rclone S3 挂载 POC SOP (SUSE)](rclone-s3-mount-poc-sop-suse.md) - SUSE Linux 环境下 S3 + rclone 挂载方案验证
+- [rclone S3 挂载 POC SOP (Windows)](rclone-s3-mount-poc-sop-windows.md) - Windows 环境下 S3 + rclone 挂载方案验证
+- [rclone S3 挂载 POC SOP (通用)](rclone-s3-mount-poc-sop.md) - 通用 S3 + rclone 挂载方案验证
+
 ---
 
 ## 🎯 使用说明
@@ -66,11 +73,27 @@
 - MSP 案例研究
 - 最佳实践分享
 
+### 实验类
+- POC 验证流程
+- 技术预研文档
+
 ---
 
 ## 🔄 更新日志
 
-- **2025-12-03**: 初始化仓库,整理所有 AWS 技术文档
+- **2025-12-03**: 
+  - 初始化仓库，整理所有 AWS 技术文档
+  - 新增 rclone 技术指南，详细介绍 VFS 缓存模式、工作原理和关键参数
+  - 新增 rclone S3 挂载 POC 验证文档（SUSE/Windows/通用版本）
+  - 完善 rclone vs Mountpoint 对比文档，新增：
+    - Windows 平台支持详情（rclone 完整支持，Mountpoint 不支持）
+    - 6 个典型使用场景对比（高性能数据处理、跨云迁移、Windows 环境等）
+    - API 调用成本分析
+    - 完整的安装部署指南（Linux/macOS/Windows）
+    - 详细的配置示例和 systemd 服务配置
+    - 故障排查指南（常见问题和解决方案）
+    - 监控和日志最佳实践
+    - 决策树帮助选择合适的工具
 
 ---
 
